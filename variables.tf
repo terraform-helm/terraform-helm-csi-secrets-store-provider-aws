@@ -1,7 +1,7 @@
 variable "name" {
   description = "Name of helm release"
   type        = string
-  default     = "csi-secrets-store-provider-aws"
+  default     = "csi-secrets-store-aws"
 }
 
 variable "repository" {
