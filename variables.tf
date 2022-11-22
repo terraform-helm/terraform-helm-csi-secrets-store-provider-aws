@@ -1,19 +1,19 @@
 variable "name" {
   description = "Name of helm release"
   type        = string
-  default     = "csi-secrets-store-aws"
+  default     = "secrets-provider-aws"
 }
 
 variable "repository" {
   description = "Url of repository"
   type        = string
-  default     = "https://aws.github.io/eks-charts"
+  default     = "https://aws.github.io/secrets-store-csi-driver-provider-aws"
 }
 
 variable "chart" {
   description = "Chart of helm release"
   type        = string
-  default     = "csi-secrets-store-provider-aws"
+  default     = "aws-secrets-manager"
 }
 
 variable "namespace" {
