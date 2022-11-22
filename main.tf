@@ -1,5 +1,5 @@
 locals {
-  main_image      = regex("^(?:(?P<url>[^/]+))?(?:/(?P<image>[^:]*))??(?::(?P<tag>[^:]*))", var.images.main)
+  main_image      = try(regex("^(?:(?P<url>[^/]+))?(?:/(?P<image>[^:]*))??(?::(?P<tag>[^:]*))", var.images.main), {})
   main_pre_value  = "image"
   main_set_values = local.main_image != {} ? [{ name = "${local.main_pre_value}.registry", value = local.main_image.url }, { name = "${local.main_pre_value}.repository", value = local.main_image.image }, { name = "${local.main_pre_value}.tag", value = local.main_image.tag }] : []
 
