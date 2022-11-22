@@ -1,7 +1,7 @@
 variable "name" {
   description = "Name of helm release"
   type        = string
-  default     = "secrets-provider-aws"
+  default     = "aws-secrets-manager"
 }
 
 variable "repository" {
@@ -13,7 +13,7 @@ variable "repository" {
 variable "chart" {
   description = "Chart of helm release"
   type        = string
-  default     = "aws-secrets-manager"
+  default     = "secrets-store-csi-driver-provider-aws"
 }
 
 variable "namespace" {
