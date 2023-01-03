@@ -14,7 +14,7 @@ No providers.
 
 | Name | Source | Version |
 |------|--------|---------|
-| <a name="module_helm"></a> [helm](#module\_helm) | github.com/terraform-helm/terraform-helm | 0.1 |
+| <a name="module_helm"></a> [helm](#module\_helm) | github.com/terraform-helm/terraform-helm | v0.2 |
 | <a name="module_main_image"></a> [main\_image](#module\_main\_image) | github.com/littlejo/terraform-helm-images-set-values | v0.1 |
 
 ## Resources
